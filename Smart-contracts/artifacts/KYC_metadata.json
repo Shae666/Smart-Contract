@@ -1,0 +1,157 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "customerAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "fullName",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "idNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "CustomerVerified",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "customers",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "isVerified",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "fullName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "idNumber",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_customerAddress",
+						"type": "address"
+					}
+				],
+				"name": "getCustomer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "isVerified",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "fullName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "idNumber",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_customerAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_fullName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_idNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "verifyCustomer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/joan.sol": "KYC"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/joan.sol": {
+			"keccak256": "0x70d9907475d44133f88cea6e0baa0dc7a34ae78969b6fc7a46d3a2019371af03",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f2b66f04c7c74d8377e8c60f861acd361f36775dbc1ad8c0f3fcfb79d6d71f70",
+				"dweb:/ipfs/Qmd9jBuWYtt5HKM9iGCsMFVEtHoythUorU3B1gjmN1a366"
+			]
+		}
+	},
+	"version": 1
+}
